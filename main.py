@@ -40,7 +40,7 @@ def main():
 
         knowledge_base = FAISS.from_documents(documents, embeddings)
 
-        model = OllamaLLM(model="llama3.2")
+        model = OllamaLLM(model="llama3.2", base_url="http://localhost:11434")
 
         template = """
         Du bist experte in den Regeln des Österreichischen Fussballbundes (ÖFB).
